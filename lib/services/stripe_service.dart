@@ -35,6 +35,7 @@ class StripeService {
         "amount": _calculateAmount(amount),
         "currency": curency,
       };
+      // call API
       var response = await dio.post("https://api.stripe.com/v1/payment_intents",
           data: data,
           options: Options(

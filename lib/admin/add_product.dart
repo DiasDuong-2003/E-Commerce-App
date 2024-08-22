@@ -68,7 +68,7 @@ class _AddProductState extends State<AddProduct> {
       });
     }
   }
-
+  
   String? value;
 
   // List category
@@ -186,6 +186,7 @@ class _AddProductState extends State<AddProduct> {
                       borderRadius: BorderRadius.circular(10)),
                   child: TextField(
                     controller: pricecontroller,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(border: InputBorder.none),
                   ),
                 ),
